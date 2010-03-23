@@ -7,11 +7,11 @@
 
 
 jQuery.fn.tinyDrag = function(callback) {
-	return $.tinyDrag(this, callback);
+	return jQuery.tinyDrag(this, callback);
 }
 
 jQuery.tinyDrag = function(el, callback) {
-	var mouseStart, elStart, moved, doc = $(document), abs = Math.abs;
+	var mouseStart, elStart, moved, doc = jQuery(document), abs = Math.abs;
 	el.mousedown(function(e) {
 		moved = false;
 		mouseStart = {x: e.pageX, y: e.pageY};
