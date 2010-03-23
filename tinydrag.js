@@ -11,11 +11,11 @@ jQuery.fn.tinyDrag = function(callback) {
 }
 
 jQuery.tinyDrag = function(el, callback) {
-	var mouseStart, elStart, moved, doc = jQuery(document), abs = Math.abs;
+	var mouseStart, elStart, moved, doc = jQuery(document), toint = parseInt, abs = Math.abs;
 	el.mousedown(function(e) {
 		moved = false;
 		mouseStart = {x: e.pageX, y: e.pageY};
-		elStart = {x: parseInt(el.css("left")), y: parseInt(el.css("top"))}
+		elStart = {x: toint(el.css("left")), y: toint(el.css("top"))}
 		doc.mousemove(drag).mouseup(stop);
 		return false;
 	});
