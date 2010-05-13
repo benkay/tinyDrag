@@ -1,4 +1,4 @@
-tinyDrag v0.9.2
+tinyDrag v0.9.3
 (c) 2010 Ben Kay <http://bunnyfire.co.uk>
 
 REQUIREMENTS:
